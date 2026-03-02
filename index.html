@@ -36,19 +36,21 @@
         }
         .main-nav a:hover { border-color: #22c55e; background: rgba(34,197,94,0.1); }
 
-        /* الأقسام */
-        .section { padding: 3.5rem 5vw; max-width: 1100px; margin: auto; }
-        .section h2 {
-            font-size: 1.6rem; margin-bottom: 1.5rem;
-            border-right: 4px solid #22c55e; padding-right: 0.75rem;
-        }
-        .section-note { color: #9ca3af; margin-bottom: 1.5rem; }
-
         /* الهيرو */
-        .hero { text-align: center; }
-        .hero-logo {
-            width: 120px; height: 120px; border-radius: 24px;
-            border: 3px solid #22c55e; margin-bottom: 1rem; object-fit: cover;
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(3px);
         }
         .hero-buttons { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
 
@@ -65,6 +67,11 @@
         .x:hover { background: #020617; }
 
         /* الكروت */
+        .section { padding: 3.5rem 5vw; max-width: 1100px; margin: auto; }
+        .section h2 {
+            font-size: 1.6rem; margin-bottom: 1.5rem;
+            border-right: 4px solid #22c55e; padding-right: 0.75rem;
+        }
         .card-section {
             background: rgba(15,23,42,0.7);
             border-radius: 24px; padding: 2rem;
@@ -78,7 +85,11 @@
             background: rgba(15,23,42,0.9);
             border-radius: 18px; padding: 1.25rem;
             border: 1px solid rgba(148,163,184,0.3);
+            text-decoration: none;
+            color: #fff;
+            transition: 0.2s;
         }
+        .card:hover { border-color: #22c55e; transform: translateY(-3px); }
         .card.center { text-align: center; }
 
         /* المؤسسين */
@@ -110,7 +121,7 @@
     <!-- الهيدر -->
     <header class="main-header">
         <div class="logo-area">
-            <img src="logo.webp" class="logo">
+            <img src="logo.png" class="logo">
             <div class="logo-text">
                 <h1>Arab City</h1>
                 <p>سيرفر عرب سيتي - حياة واقعية</p>
@@ -129,20 +140,22 @@
     </header>
 
     <!-- الرئيسية -->
-    <section id="home" class="section hero">
-        <img src="logo.webp" class="hero-logo">
-        <h2>Arab City - عرب سيتي</h2>
-        <p>سيرفر حياة واقعية يقدم تجربة ممتعة واحترافية لجميع اللاعبين.</p>
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <h2>Arab City - عرب سيتي</h2>
+            <p>سيرفر حياة واقعية يقدم تجربة ممتعة واحترافية لجميع اللاعبين.</p>
 
-        <div class="hero-buttons">
-            <a href="#" class="btn discord">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-                دخول ديسكورد
-            </a>
-            <a href="#" class="btn x">
-                <img src="https://abs.twimg.com/favicons/twitter-pip.2.ico">
-                حساب X
-            </a>
+            <div class="hero-buttons">
+                <a href="https://discord.gg/arabcity" class="btn discord">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+                    دخول ديسكورد
+                </a>
+
+                <a href="https://youtube.com/@dokyyiii?si=IIYM88PpVAu0l_8B" class="btn x">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+                    حساب يوتيوب
+                </a>
+            </div>
         </div>
     </section>
 
@@ -220,8 +233,15 @@
         <h2>السيرفرات</h2>
 
         <div class="card-grid">
-            <a class="card" href="#"><h3>سيرفر الفايتات</h3><p>اضغط للدخول</p></a>
-            <a class="card" href="#"><h3>سيرفر العصابات RP</h3><p>اضغط للدخول</p></a>
+            <a href="https://www.roblox.com/share?code=bf6a6956c7cfc741bcd01a2e3a6ed598&type=ExperienceDetails&stamp=1772461699669" class="card">
+                <h3>سيرفر الفايتات</h3>
+                <p>اضغط للدخول</p>
+            </a>
+
+            <a href="https://discord.gg/dFqf6w66U2" class="card">
+                <h3>سيرفر العصابات RP</h3>
+                <p>اضغط للدخول</p>
+            </a>
         </div>
     </section>
 
