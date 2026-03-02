@@ -1,0 +1,84 @@
+/* الأساسيات */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #0f172a;
+  color: #f9fafb;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* الهيدر */
+.main-header {
+  background: #1e293b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 40px;
+}
+
+.main-nav a {
+  color: #f9fafb;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-nav a:hover {
+  color: #38bdf8;
+}
+
+/* الأقسام */
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+/* القوائم */
+.clean-list {
+  list-style: none;
+  padding: 0;
+}
+.clean-list li {
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+/* المؤسسين */
+.founders-list li strong {
+  color: #facc15;
+}
+
+/* الأزرار */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+.btn.discord { background: #5865f2; color: #fff; }
+.btn.x { background: #000; color: #fff; }
+.btn.youtube { background: #ff0000; color: #fff; }
+
+/* الفوتر */
+.main-footer {
+  background: #1e293b;
+  text-align: center;
+  padding: 1rem;
+  color: #94a3b8;
+}
