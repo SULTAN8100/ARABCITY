@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arab City - عرب سيتي</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="logo.PNG" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arab City - عرب سيتي</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.PNG" />
+  <style>
+    body { font-family: "Segoe UI", Tahoma, sans-serif; background:#0f172a; color:#f9fafb; margin:0; }
+    .main-header { background:#1e293b; color:#fff; display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; }
+    .main-nav a { color:#f9fafb; margin:0 0.8rem; text-decoration:none; font-weight:bold; }
+    .main-nav a:hover { color:#38bdf8; }
+    .section { display:none; padding:2rem; }
+    .section.active { display:block; }
+    h2 { color:#38bdf8; margin-bottom:1rem; }
+    .btn { display:inline-block; padding:0.6rem 1.2rem; border-radius:6px; text-decoration:none; font-weight:bold; margin:0.5rem; }
+    .btn.discord { background:#5865f2; color:#fff; }
+    .btn.youtube { background:#ff0000; color:#fff; }
+    .clean-list { list-style:none; padding:0; }
+    .clean-list li { background:rgba(255,255,255,0.05); margin-bottom:0.8rem; padding:0.8rem; border-radius:8px; }
+    footer { background:#1e293b; text-align:center; padding:1rem; color:#94a3b8; }
+  </style>
 </head>
 <body>
 
-    <!-- الهيدر -->
-    <header class="main-header">
-        <div class="logo-area">
-            <img src="logo.PNG" class="logo">
-            <div class="logo-text">
-                <h1>Arab City</h1>
-                <p>سيرفر عرب سيتي - حياة واقعية</p>
-            </div>
-        </div>
+  <!-- الهيدر -->
+  <header class="main-header">
+    <div class="logo-area">
+      <img src="logo.PNG" class="logo" style="height:40px;">
+      <div class="logo-text">
+        <h1>Arab City</h1>
+        <p>سيرفر عرب سيتي - حياة واقعية</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#" onclick="showSection('home')">الرئيسية</a>
+      <a href="#" onclick="showSection('activation')">التفعيل</a>
+      <a href="#" onclick="showSection('rules')">القوانين</a>
+      <a href="#" onclick="showSection('store')">المتجر</a>
+      <a href="#" onclick="showSection('jobs')">تقديم وظائف</a>
+      <a href="#" onclick="showSection('servers')">السيرفرات</a>
+      <a href="#" onclick="showSection('founders')">المؤسسين</a>
+      <a href="#" onclick="showSection('youtube')">يوتيوب</a>
+    </nav>
+  </header>
 
-        <nav class="main-nav">
-            <a href="#home">الرئيسية</a>
-            <a href="#activation">التفعيل</a>
-            <a href="#rules">القوانين</a>
-            <a href="#store">المتجر</a>
-            <a href="#jobs">تقديم وظائف</a>
-            <a href="#servers">السيرفرات</a>
-            <a href="#founders">المؤسسين</a>
-            <a href="#youtube">يوتيوب</a>
-        </nav>
-    </header>
+  <!-- الرئيسية -->
+  <section id="home" class="section active">
+    <h2>Arab City - عرب سيتي</h2>
+    <p>سيرفر عرب سيتي هو مجتمع حياة واقعية متكامل يهدف لتقديم تجربة ممتعة واحترافية لكل اللاعبين.</p>
+    <div class="hero-buttons">
+      <a href="https://discord.gg/arabcity" class="btn discord">دخول ديسكورد عرب سيتي</a>
+      <a href="https://youtube.com/@dokyyiii?si=IIYM88PpVAu0l_8B" class="btn youtube">حساب يوتيوب</a>
+    </div>
+  </section>
 
-    <!-- الرئيسية -->
-    <section id="home" class="section hero">
-        <div class="hero-content">
-            <img src="logo.PNG" class="hero-logo">
-            <h2>Arab City - عرب سيتي</h2>
-            <p>
-                سيرفر عرب سيتي هو مجتمع حياة واقعية متكامل يهدف لتقديم تجربة ممتعة واحترافية
-                لكل اللاعبين مع تركيز كبير على الرول بلاي والجودة.
-            </p>
-            <div class="hero-buttons">
-                <a href="https://discord.gg/your-discord" class="btn discord">دخول ديسكورد عرب سيتي</a>
-                <a href="https://x.com/your-x-account" class="btn x">حسابنا في X</a>
-            </div>
-        </div>
-    </section>
+  <!-- التفعيل -->
+  <section id="activation" class="section">
+    <h2>التفعيل</h2>
+    <ul class="clean-list">
+      <li>العمر المسموح لدخول السيرفر: 13 سنة فما فوق.</li>
+      <li>ممنوع استخدام شخصية افتراضية إلا من خلال المتجر.</li>
+      <li>ممنوع كتابة اسمك برموز أو أسماء مشاهير.</li>
+      <li>يمنع الدخول من جهاز غير جهازك الشخصي.</li>
+      <li>يحق لك امتلاك شخصيتين فقط داخل عرب سيتي.</li>
+    </ul>
+  </section>
 
-    <!-- التفعيل -->
-    <section id="activation" class="section card-section">
-        <h2>التفعيل</h2>
-        <ul class="clean-list">
-            <li>العمر المسموح لدخول السيرفر: 13 سنة فما فوق.</li>
-            <li>ممنوع استخدام شخصية افتراضية إلا من خلال المتجر.</li>
-            <li>ممنوع كتابة اسمك برموز أو أسماء مشاهير.</li>
-            <li>يمنع الدخول من جهاز غير جهازك الشخصي.</li>
-            <li>يحق لك امتلاك شخصيتين فقط داخل عرب سيتي.</li>
-        </ul>
-    </section>
+  <!-- القوانين -->
+  <section id="rules" class="section">
+    <h2>قوانين السيرفر</h2>
+    <ul class="clean-list">
+      <li><strong>NLR:</strong> عند الإغماء الكامل لا يمكنك الكلام أو الحركة حتى الإنعاش.</li>
+      <li><strong>PowerGaming:</strong> يمنع استغلال أي شيء غير منطقي.</li>
+      <li><strong>NVL:</strong> يجب أن تخاف على حياة شخصيتك بشكل واقعي.</li>
+      <li><strong>Metagaming:</strong> يمنع استخدام معلومات من خارج اللعبة.</li>
+      <li><strong>RDM:</strong> يمنع القتل بدون سبب أو تهديد.</li>
+      <li><strong>قانون تقدير الحياة:</strong> يجب الحفاظ على حياة الجميع وعدم التهور.</li>
+    </ul>
+  </section>
 
-    <!-- القوانين -->
-    <section id="rules" class="section">
-        <h2>قوانين السيرفر</h2>
-        <ul class="clean-list">
-            <li><strong>NLR:</strong> عند الإغماء الكامل لا يمكنك الكلام أو الحركة حتى الإنعاش.</li>
-            <li><strong>PowerGaming:</strong> يمنع استغلال أي شيء غير منطقي.</li>
-            <li><strong>NVL:</strong> يجب أن تخاف على حياة شخصيتك بشكل واقعي.</li>
-            <li><strong>Metagaming:</strong> يمنع استخدام معلومات من خارج اللعبة.</li>
-            <li><strong>RDM:</strong> يمنع القتل بدون سبب أو تهديد.</li>
-            <li><strong>قانون تقدير الحياة:</strong> يجب الحفاظ على حياة الجميع وعدم التهور.</li>
-        </ul>
-    </section>
+  <!-- المتجر -->
+  <section id="store" class="section">
+    <h2>المتجر</h2>
+    <p>قريباً... متجر عرب سيتي قادم بتجربة مميزة وحصرية.</p>
+  </section>
 
-    <!-- المتجر -->
-    <section id="store" class="section card-section">
-        <h2>المتجر</h2>
-        <p>قريباً... متجر عرب سيتي قادم بتجربة مميزة وحصرية.</p>
-    </section>
+  <!-- تقديم وظائف -->
+  <section id="jobs" class="section">
+    <h2>تقديم وظائف</h2>
+    <ul class="clean-list">
+      <li>الشرطة: مغلق</li>
+      <li>الصحة: مغلق</li>
+      <li>وزارة العدل: مغلق</li>
+    </ul>
+  </section>
 
-    <!-- تقديم وظائف -->
-    <section id="jobs" class="section card-section">
-        <h2>تقديم وظائف</h2>
-        <ul class="clean-list">
-            <li>الشرطة: مغلق</li>
-            <li>الصحة: مغلق</li>
-            <li>وزارة العدل: مغلق</li>
-        </ul>
-    </section>
+  <!-- السيرفرات -->
+  <section id="servers" class="section">
+    <h2>سيرفرات عرب سيتي</h2>
+    <ul class="clean-list">
+      <li><a href="https://www.roblox.com/share?code=bf6a6956c7cfc741bcd01a2e3a6ed598&type=ExperienceDetails&stamp=1772461699669">سيرفر الفايتات</a></li>
+      <li><a href="https://discord.gg/dFqf6w66U2">سيرفر العصابات RP</a></li>
+    </ul>
+  </section>
 
-    <!-- السيرفرات -->
-    <section id="servers" class="section card-section">
-        <h2>سيرفرات عرب سيتي</h2>
-        <ul class="clean-list">
-            <li><a href="https://discord.gg/your-fights">سيرفر الفايتات</a></li>
-            <li><a href="https://discord.gg/your-rp">سيرفر العصابات RP</a></li>
-        </ul>
-    </section>
+  <!-- المؤسسين -->
+  <section id="founders" class="section">
+    <h2>المؤسسين</h2>
+    <ul class="clean-list">
+      <li><strong>دوكي:</strong> مؤسس وصانع السيرفر الأول ويمتلك منصب أونر ومبرمج بالماب</li>
+      <li><strong>اتشاي:</strong> مسؤول إداري محترف ذو خبرة عالية ويمتلك منصب كو فاوندر</li>
+      <li><strong>سلطان:</strong> مسؤول إداري محترف ذو خبرة عالية ويمتلك منصب كو فاوندر ومسؤول البرمجة للديسكورد</li>
+      <li><strong>يونس:</strong> مبرمج الماب وفاوندر</li>
+      <li><strong>أسامة:</strong> فاوندر ومنظم إداري محترف</li>
+    </ul>
+  </section>
 
-    <!-- المؤسسين -->
-    <section id="founders" class="section founders">
-        <h2>المؤسسين</h2>
-        <ul class="clean-list founders-list">
-            <li><strong>دوكي:</strong> مؤسس وصانع السيرفر الأول ويمتلك منصب أونر ومبرمج بالماب</li>
-            <li><strong>اتشاي:</strong> مسؤول إداري محترف ذو خبرة عالية ويمتلك منصب كو فاوندر</li>
-            <li><strong>سلطان:</strong> مسؤول إداري محترف ذو خبرة عالية ويمتلك منصب كو فاوندر ومسؤول البرمجة للديسكورد</li>
-            <li><strong>يونس:</strong> مبرمج الماب وفاوندر</li>
-            <li><strong>أسامة:</strong> فاوندر ومنظم إداري محترف</li>
-        </ul>
-    </section>
+  <!-- اليوتيوب -->
+  <section id="youtube" class="section">
+    <h2>قناة اليوتيوب</h2>
+    <p>شاهد أحدث المقاطع والتحديثات الخاصة بسيرفر عرب سيتي.</p>
+    <a href="https://youtube.com/@dokyyiii?si=IIYM88PpVAu0l_8B" class="btn youtube">زيارة القناة</a>
+  </section>
 
-    <!-- اليوتيوب -->
-    <section id="youtube" class="section card-section">
-        <h2>قناة اليوتيوب</h2>
-        <p>شاهد أحدث المقاطع والتحديثات الخاصة بسيرفر عرب سيتي.</p>
-        <a href="https://youtube.com/@yourchannel" class="btn youtube">زيارة القناة</a>
-    </section>
+  <!-- الفوتر -->
+  <footer>
+    <p>© عرب سيتي - Arab City RP Server</p>
+  </footer>
 
-    <!-- الفوتر -->
-    <footer class="main-footer">
-        <p>© عرب سيتي - Arab City RP Server</p>
-    </footer>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
